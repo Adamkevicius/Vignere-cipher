@@ -153,7 +153,7 @@ int main()
 			ascii_desifruotas_tekstas[i] = alphabet[ascii_desifravimas];
 			cout<<"Jusu desifruotas ASCII tekstas - " << ascii_desifruotas_tekstas[i];
 		}
-		cout << endl;
+		
 
 
 	}
