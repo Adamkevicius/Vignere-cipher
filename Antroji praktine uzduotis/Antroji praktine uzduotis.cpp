@@ -1,4 +1,4 @@
-﻿// Antroji praktinė užduotis.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// Antroji praktinė užduotis.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
 #include <iostream>
@@ -130,39 +130,38 @@ int main()
 	}
 	//acii
 	int ascii_sifravimas;
-	char ascii_tekstas[300];
-	
+	char ascii_raides[300];
+	string ascii_tekstas;
+
 	if (x == 3) {
 		for (int i = 0; i < tekstas.length(); i++) {
 			ascii_sifravimas = ((int(tekstas[i]) + int(naujas_raktas[i])) % 26);
-			ascii_tekstas[i] = alphabet[ascii_sifravimas];
-			cout << "Jusu uzsifruotas ASCII tekstas - " << ascii_tekstas[i];
-			
-			
+			ascii_raides[i] = alphabet[ascii_sifravimas];
+			ascii_tekstas += ascii_tekstas[i];
+
+
 		}
-		cout << endl;
+		cout << "Jusu uzsifruotas ASCII tekstas - " << ascii_tekstas<<endl;
 	}
-	
+
 	//ascii desifravimas
 	int ascii_desifravimas;
-	char ascii_desifruotas_tekstas[300];
+	char ascii_desifruotos_raides[300];
+	string ascii_desifruotas_tekstas;
 
 	if (x == 4) {
 		for (int i = 0; i < tekstas.length(); i++) {
 			ascii_desifravimas = ((int(tekstas[i]) - int(naujas_raktas[i]) + 26) % 26);
-			ascii_desifruotas_tekstas[i] = alphabet[ascii_desifravimas];
-			cout<<"Jusu desifruotas ASCII tekstas - " << ascii_desifruotas_tekstas[i];
-		}
-		
+			ascii_desifruotos_raides[i] = alphabet[ascii_desifravimas];
+			ascii_desifruotas_tekstas += ascii_desifruotos_raides[i];
 
-
-	}
-
-
-	return 0;
-		
 			
-		
+		}
+		cout << "Jusu desifruotas ASCII tekstas - " << ascii_desifruotas_tekstas << endl;
+
+
+		return 0;
+	}
 }
-	
-	
+
+
