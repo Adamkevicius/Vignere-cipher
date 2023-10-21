@@ -137,7 +137,7 @@ int main()
 		for (int i = 0; i < tekstas.length(); i++) {
 			ascii_sifravimas = ((int(tekstas[i]) + int(naujas_raktas[i])) % 26);
 			ascii_raides[i] = alphabet[ascii_sifravimas];
-			ascii_tekstas += ascii_tekstas[i];
+			ascii_tekstas += ascii_raides[i];
 
 
 		}
